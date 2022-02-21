@@ -4,11 +4,16 @@ import { NavLink } from 'react-bootstrap';
 import ToggleButton from 'react-toggle-button'
 import { fetchData } from '../http/currencyAPI';
 
-const Header = () => {
-    const [theme, setTheme] = useState(false)
+const Header = ({toggleTheme, value}) => {
+    const [theme, setTheme] = useState(value)
 
     return (
-        <div style={{ backgroundColor: '#a5a5a5' }} className='d-flex justify-content-between p-2 m-0'>
+        <div style={{
+            display: 'flex',
+            alignItems: 'baseline',
+            backgroundColor: theme ? 'black' : '#a5a5a5',
+            border: theme ? 'thick solid black' : 'thick solid #a5a5a5'
+        }} className='d-flex justify-content-between p-2 m-0'>
             <div className='d-flex'>
                 <NavLink to={'/'} style={{ color: 'white' }}>All Currencies</NavLink>
                 <NavLink to={'/my-currencies'} style={{ color: 'white' }}>My Currencies</NavLink>
