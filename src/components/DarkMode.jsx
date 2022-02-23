@@ -1,7 +1,7 @@
 import React, { useState} from 'react'
 import "../styles/DarkMode.css";
 
-const ThemeButton = ({ }) => {
+const DarkMode = ({ }) => {
     const [value, setvalue] = useState(false)
     let clickedClass = "clicked";
     const body = document.body;
@@ -42,4 +42,4 @@ const ThemeButton = ({ }) => {
   )
 }
 
-export default ThemeButton
+export default DarkMode

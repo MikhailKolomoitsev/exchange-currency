@@ -1,16 +1,21 @@
-import React, { useState} from 'react'
+import React, { useState } from 'react'
+import '../styles/CurrencyCard.css'
 
-const CurrencyCard = ({name, key}) => {
-    const [checked, setChecked] = useState(false);
+const CurrencyCard = ({ name, shortName }) => {
+  const [checked, setChecked] = useState(false);
   return (
-      <li
-          key={key}
-          style={{width:200, height:20}}
-        className='d-flex justify-content-between p-2 m-0 align-items-baseline'
-      >
-          <div><p>{name}</p></div>
-          <div>star</div>
-</li>
+    <li
+      className='currency-card'
+    >
+      <div>
+        <h3>{shortName}: {name}</h3>
+      </div>
+      <button
+        style={{ backgroundColor: checked ?'#ffc446':'white'}}
+        onClick={()=>setChecked(prev=>!prev)}
+        type="button" className="wish-button" aria-label="add to favorites">
+      </button>
+    </li>
   )
 }
 

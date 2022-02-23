@@ -12,7 +12,6 @@
 #darkMode:hover,
 #darkMode:focus {
   filter: none;
-  background-color: black;
   cursor: pointer;
 }
 

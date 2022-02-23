@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react'
 import { NavLink } from 'react-bootstrap';
-import ThemeButton from './DarkMode';
+import DarkMode from './DarkMode';
 
 const Header = () => {
 
@@ -14,7 +14,7 @@ const Header = () => {
                 <NavLink to={'/'} style={{ color: 'white' }}>All Currencies</NavLink>
                 <NavLink to={'/my-currencies'} style={{ color: 'white' }}>My Currencies</NavLink>
             </div>
-            <ThemeButton />
+            <DarkMode />
         </div>
 
     )
