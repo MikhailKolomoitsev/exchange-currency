@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/exchange-currency/static/css/main.e8ab8168.css",
+    "main.js": "/exchange-currency/static/js/main.51b351ad.js",
+    "static/media/moon.png": "/exchange-currency/static/media/moon.08c8560ae615e449e9e2.png",
+    "static/media/star-outline.svg": "/exchange-currency/static/media/star-outline.1161000b8e63f54cf659.svg",
+    "index.html": "/exchange-currency/index.html",
+    "main.e8ab8168.css.map": "/exchange-currency/static/css/main.e8ab8168.css.map",
+    "main.51b351ad.js.map": "/exchange-currency/static/js/main.51b351ad.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e8ab8168.css",
+    "static/js/main.51b351ad.js"
+  ]
+}
